@@ -31,7 +31,7 @@ jobs:
             gotestsum --junitfile /tmp/test-reports/unit-tests.xml
       - store_test_results:
           path: /tmp/test-reports
-  golang-ci-lint:
+  golangci-lint:
     docker:
       - image: golangci/golangci-lint:latest
     steps:
