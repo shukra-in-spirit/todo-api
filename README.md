@@ -12,6 +12,6 @@ The important files are:
 3. main.go file is in ./todoAPI/main.go
 
 
-<p align="center">
+<p align="right">
   <img src="./images/logo.png" alt="Shukra in Spirit" width="738">
 </p>
