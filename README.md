@@ -11,6 +11,7 @@ The important files are:
 2. .circleci contains the circleci configuration
 3. main.go file is in ./todoAPI/main.go
 
-<span align="center">
+<span align="right">
   <img src="./images/logo.png" alt="Shukra in Spirit" width="150">
+  <p> Learning is a journey. </p>
 </span>
