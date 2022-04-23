@@ -48,7 +48,7 @@ jobs:
             - "/go/pkg/mod"
       - run:
           name: Run GolangCI-Lint
-          command: golangci-lint --config ./golangci-lint.yaml run
+          command: golangci-lint --config ./golangci-lint-config.yaml run
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
 workflows:
