@@ -1,8 +1,11 @@
 package main
 
 import (
-	"github.com/gin-gonic/gin"
+	"log"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
+
 	"todo-api/internal/pkg/constants"
 )
 
@@ -11,9 +14,8 @@ func main() {
 	// This will create an engine (router) with default middleware
 	// logger and recovery (crash-free) middleware enabled
 	// fastest and easiest way to get running
-
-	// using gin.New() allows us to create a blank router
 	router := gin.New()
+	// using gin.New() allows us to create a blank router
 	// default configuration for the router is:
 	// RedirectTrailingSlash: true, RedirectFixedPath: false
 	// HandleMethodNotAllowed: false, ForwardedByClientIP: true
@@ -27,11 +29,14 @@ func main() {
 		// "Status: healthy"
 	})
 	router.GET("/version", func(c *gin.Context) {
-		c.String(http.StatusOK, "Version: %s \n", constants.TodoApiVersion)
+		c.String(http.StatusOK, "Version: %s \n", constants.TodoAPIVersion)
 	})
 	// in the GET method, we are passing a Method Expression
 
 	// The following command will run the server
 	// default port value is 8080
-	router.Run(constants.TodoPortNumber)
+	err := router.Run(constants.TodoPortNumber)
+	if err != nil {
+		log.Fatalf("the server failed to run with error: %s", err)
+	}
 }

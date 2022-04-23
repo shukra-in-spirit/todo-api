@@ -18,6 +18,9 @@ linters:
     - golint
     - interfacer
     - scopelint
+    - godox
+    - gofumpt
+    - gci
 
 issues:
   exclude-rules:
