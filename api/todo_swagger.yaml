@@ -1,0 +1,48 @@
+swagger: "2.0"
+info:
+  description: "TODO API Service is a wrapper around the google calendar api. It exposes a set of API functioning similar to a TODO list. There are endpoints which let you create update delete and get events for the user."
+  version: "v0.0.1"
+  title: "Todo Api Service"
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+host: "localhost:8080"
+basePath: "/v1"
+schemes:
+  - "https"
+  - "http"
+paths:
+  /status:
+    get:
+      tags:
+        - "Service Info"
+      summary: "Provides the service status"
+      description: "If the endpoint is functional we can confirm that the todo api service is up."
+      operationId: "todoApiStatus"
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: string
+            example: "Status: Healthy"
+        "400":
+          description: "Invalid status value"
+  /version:
+    get:
+      tags:
+        - "Service Info"
+      summary: "Provides the service version"
+      description: "If the endpoint is functional we can confirm that the todo api service is up."
+      operationId: "todoApiVersion"
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: "successful operation"
+          schema:
+            type: string
+            example: "Version: v0.0.1"
+        "400":
+          description: "Invalid status value"
