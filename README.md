@@ -1,7 +1,7 @@
-<p align="right">
-  <img src="./images/logo.png" alt="Shukra in Spirit" width="150">
-</p>
 # TODO-API-Service
+<span align="right">
+  <img src="./images/logo.png" alt="Shukra in Spirit" width="150">
+</span>
 The todo api service acts as a wrapper around the **Google Calendar Api**. It exposes endpoints which allow it to behave like a Todo interface. On calling these endpoints with appropriate values, CRUD operations can be performed on users calendars.
 The list of exposed endpoints are:
 - **GET events**
