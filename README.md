@@ -13,5 +13,5 @@ The important files are:
 
 
 <p align="right">
-  <img src="./images/logo.png" alt="Shukra in Spirit" width="738">
+  <img src="./images/logo.png" alt="Shukra in Spirit" width="70">
 </p>
