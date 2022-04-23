@@ -13,5 +13,5 @@ The important files are:
 
 <p align="right">
   <img src="./images/logo.png" alt="Shukra in Spirit" width="150">
-  <p> Learning is a journey. </p>
+  <p align="right"><strong> Learning is a journey. <strong></p>
 </p>
