@@ -15,3 +15,10 @@ The important files are:
   <img src="./images/logo.png" alt="Shukra in Spirit" width="150">
   <p align="right">Learn. Grow. Prosper.</p>
 </p>
+
+How to set up dev env:
+1. Deploy a docker container of golang:latest
+2. Load Git credentials
+3. Clone
+4. Setup remote from vs code
+5. Run main.go file
