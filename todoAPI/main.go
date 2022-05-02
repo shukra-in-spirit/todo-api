@@ -7,9 +7,12 @@ import (
 	"github.com/gin-gonic/gin"
 
 	"todo-api/internal/pkg/constants"
+	"todo-api/internal/pkg/calendar"
 )
 
 func main() {
+	calendar.TriggerCalendar()
+	os.exit(1)
 	// router := gin.Default()
 	// This will create an engine (router) with default middleware
 	// logger and recovery (crash-free) middleware enabled
